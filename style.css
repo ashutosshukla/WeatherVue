@@ -1,0 +1,26 @@
+
+body{   margin: 0;padding:0; background-color: rgb(248, 241, 233);
+
+}
+#nav1{
+    background-color: rgb(238, 219, 197);
+}
+h4{
+    color: white;
+}
+li{
+    color: white;
+}
+span{
+    color: white;
+}
+
+td>li>span{
+    color: black;
+    
+}
+
+.NYC{
+    list-style: none;
+    
+}
