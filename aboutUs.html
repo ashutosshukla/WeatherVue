@@ -11,26 +11,57 @@
             padding: 0;
             background-color: rgb(248, 241, 233);
         }
-        .brand{
-            text-align: center;
+        .main{
+            display: flex;
+        }
+        .image img{
+            position: relative;
+            width: 100%;
             
         }
-        .brand>h1{
-            font-size:60px;
+        .image{
+            
+            width: 50%;
+            padding-top: 100px;
+            
         }
-        .container>h1,pre,h3,h4{
-            text-align: center;
+        .text{
+            width: 50%;
+        }
 
+        @media (max-width: 480px) {
+             .main{
+                flex-direction: column;
+                
+             }
+             .image
+             {
+                padding-top: 40px;
+                
+             }
+             .image img{
+            width:100%;
+            margin-left: 50%;
+            height: 30vh;
+            }
+            .text p
+            {
+                margin-left: 80px;
+                width: 100%;
+                
+            }
+            
         }
-        .container>pre{
-            font-size: larger;
+        @media (max-width: 768px) {
+             .image img{
+                position: relative;
+                padding-top: 100px;
+                margin-top: 20px;
+             }
         }
-        .container{
-            margin-top: 90px;
-        }
-        .container>h3{
-            margin-top: 50px;
-        }
+        
+        
+        
     </style>
 </head>
 <body>
@@ -59,63 +90,71 @@
 
 
     <div class="main">
-        <div class="brand" >
-            <h1>WeatherVue</h1>
+        <div class="image">
+            <img src="images/image.svg" alt="image">
         </div>
-    <div class="container">
-        <h1 class="jumbotron-heading">About Us</h1>
-        <pre> At WeatherWise, we're passionate about providing you with accurate and up-to-date 
-            weather information at your fingertips. Our app is designed to keep you informed about the 
-            ever-changing weather conditions so you can make informed decisions for your day.</pre>
-        <h3>Our Mission:</h3>
-        <pre>Our mission is to deliver reliable and precise weather data through a user-friendly interface.
-            We aim to empower individuals to plan ahead, stay safe, and maximize their productivity by 
-            offering real-time weather insights.</pre>
-        
-            
+        <div class="text">
+            <h1 class="jumbotron-heading">About Us</h1>
+             <p>
+                At WeatherWise, we're passionate about providing you with accurate and up-to-date 
+                weather information at your fingertips. Our app is designed to keep you informed about the 
+                ever-changing weather conditions so you can make informed decisions for your day.
+            </p>
+            <h3>Our Mission:</h3>
+            <p>
+                Our mission is to deliver reliable and precise weather data through a user-friendly interface.
+                We aim to empower individuals to plan ahead, stay safe, and maximize their productivity by 
+                offering real-time weather insights.
+            </p>
+
+                        
         <h3>Features:</h3>
         
-        <pre>
+        <p>
         <b>Real-Time Updates:</b>Our app connects to a robust weather API to ensure that you receive 
-            the most current weather conditions, forecasts, and alerts.
-        </pre>    
-        <pre>
+        the most current weather conditions, forecasts, and alerts.
+        </p>    
+        <p>
         <b>User-Friendly Interface:</b> We understand the importance of simplicity. Our app boasts an 
         intuitive and clean design, making it easy for users of all ages to access the information they
         need effortlessly.
-        </pre>    
-        <pre>
+        </p>    
+        <p>
         <b>Location-Based Data:</b> By utilizing location services, we tailor weather data to your specific 
             geographic area, providing hyper-local forecasts that are relevant to your exact location.
-        </pre>    
-        <pre>
+        </p>    
+        <p>
         <b>Hourly and Daily Forecasts:</b>Whether you're planning a quick outing or scheduling your week,
              we've got you covered. Our app offers both hourly and daily forecasts so you can anticipate 
              changes in weather patterns.
-        </pre>    
-        <pre>
+        </p>    
+        <p>
         <b>Interactive Maps:</b> Dive into detailed weather maps that showcase radar, satellite imagery,
          and more. This feature helps you visualize weather patterns and track storms in real-time.
-        </pre>    
-        <pre>
+        </p>    
+        <p>
         <b>Severe Weather Alerts:</b> Safety is paramount. We provide instant notifications about severe 
         weather conditions in your area, ensuring that you're always prepared for unexpected developments.
-        </pre>    
-        <pre>
+        </p>    
+        <p>
         <b>Customization:</b>Tailor the app to your preferences. Choose from various units for temperature,
          wind speed, and more. Set favorite locations for quick access to weather information in different 
          places.
-        
-        <h3>Our Data Source:</h3>
-        <pre>
-         We leverage a reliable and comprehensive weather API to gather our data. This API aggregates data from
-         various meteorological sources, satellite feeds, and weather stations around the world. Our partnership
-          with this API guarantees the accuracy and timeliness of the information we provide.
-        </pre> 
-        
-    
+        </div>
+
     </div>
-    </div>
+    <div class="container">
+        <footer class="py-3 my-4">
+          <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+            <li class="nav-item"><a href="index.html" class="nav-link px-2 text-body-secondary">Home</a></li>
+            <li class="nav-item"><a href="aboutUs.html" class="nav-link px-2 text-body-secondary">About</a></li>
+          </ul>
+          <p class="text-center text-body-secondary">© 2023 WeatherVue</p>
+        </footer>
+      </div>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"></script>
     
 </body>
 </html>
